@@ -1,6 +1,3 @@
-# nih-grant-activity-classifier
-Predict NIH grant activity series (F/T/K/R) from funding &amp; duration signals (FY18–FY23, 118k+ records).
-
 # NIH Grant Activity Classifier (F/T/K/R)
 
 Predict NIH grant activity series (F/T/K/R) from funding & duration signals using NIH RePORTER data (FY18–FY23, 118k+ records).
