@@ -1,4 +1,4 @@
-# NIH Grant Activity Classifier (F/T/K/R)
+# NIH Grant Activity Classifier
 
 Predict NIH grant activity series (F/T/K/R) from structured award signals (e.g., total cost and grant length) using NIH RePORTER data (FY2018–FY2023, 118k+ records).
 
