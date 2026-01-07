@@ -1,9 +1,12 @@
 # NIH Grant Activity Classifier
 
+Multi-class classification of NIH award activity series (F/T/K/R) from structured NIH RePORTER signals.
+
 Predict NIH grant activity series (F/T/K/R) from structured award signals (e.g., total cost and grant length) using NIH RePORTER data (FY2018–FY2023, 118k+ records).
 
-**Status:** Portfolio version (report published; reproducible pipeline + demo in progress)  
-**Slides / full notebook:** Available upon request
+**Notebook:** [`NIH_Grant_Activity_Classifier.ipynb`](NIH_Grant_Activity_Classifier.ipynb)  
+**Slides:** [`slides/NIH_Grant_Activity_Classifier_Slides.pdf`](slides/NIH_Grant_Activity_Classifier_Slides.pdf)  
+**Project report:** [`reports/report.md`](reports/report.md)
 
 ## Why this matters
 
@@ -20,22 +23,28 @@ This project frames a **multi-class classification** problem to infer the **acti
 - Source: NIH RePORTER (public)
 - Window: FY2018–FY2023
 - Scale: 118,355 records (after filtering/alignment)
+- Repo includes: sample CSVs in `data/sample/` (full processed datasets excluded due to GitHub size limits)
 
 ## Baseline results
 
-Best baseline: **Histogram-based Gradient Boosting (~0.93 validation score)**  
+Best baseline: **Histogram-based Gradient Boosting (~0.93 macro-F1 on validation)**  
 Benchmarked against: Decision Tree, MLP, Logistic Regression.
 
-## Project report
+## Quickstart
 
-- See: [`reports/report.md`](reports/report.md)
+    python3 -m venv .venv
+    source .venv/bin/activate
+    pip install -r requirements.txt
 
-## Repository structure (WIP)
+Open and run: `NIH_Grant_Activity_Classifier.ipynb`
 
+## Repo structure
+
+- `NIH_Grant_Activity_Classifier.ipynb` end-to-end notebook (portfolio version)
+- `src/` shared utilities (e.g., missing-value checks)
+- `data/sample/` sample datasets
 - `reports/` short write-up
-- `assets/` figures and screenshots (coming)
-- `src/` training / inference scripts (coming)
-- `app/` minimal demo (coming)
+- `slides/` presentation PDF
 
 ## Roadmap
 
@@ -43,10 +52,6 @@ Benchmarked against: Decision Tree, MLP, Logistic Regression.
 - Evaluate with macro-F1; handle class imbalance
 - Add explainability (feature importance / SHAP)
 - Ship a minimal demo (Streamlit) and/or API (FastAPI)
-
-## Slides
-
-- [`slides/NIH_Grant_Activity_Classifier_Slides.pdf`](slides/NIH_Grant_Activity_Classifier_Slides.pdf)
 
 ## License
 
