@@ -27,6 +27,7 @@ This project frames a **multi-class classification** problem to infer the **acti
 - Window: FY2018–FY2023
 - Scale: 118,355 records (after filtering/alignment)
 - Repo includes: sample CSVs in `data/sample/` (full processed datasets excluded due to GitHub size limits)
+- To reproduce full-scale training, download NIH RePORTER exports for FY2018–FY2023 and place the raw files under `data/raw/` (ignored by git), then run the notebook/pipeline steps.
 
 ## Baseline results
 
