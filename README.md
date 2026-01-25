@@ -4,6 +4,9 @@ Multi-class classification of NIH award activity series (F/T/K/R) from structure
 
 Predict NIH grant activity series (F/T/K/R) from structured award signals (e.g., total cost and grant length) using NIH RePORTER data (FY2018–FY2023, 118k+ records).
 
+**Best baseline:** Histogram-based Gradient Boosting  
+**Validation metric:** ~0.93 **macro-F1**
+
 **Notebook:** [`notebooks/NIH_Grant_Activity_Classifier.ipynb`](notebooks/NIH_Grant_Activity_Classifier.ipynb)  
 **Slides:** [`slides/NIH_Grant_Activity_Classifier_Slides.pdf`](slides/NIH_Grant_Activity_Classifier_Slides.pdf)  
 **Project report:** [`reports/report.md`](reports/report.md)
