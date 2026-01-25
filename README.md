@@ -7,10 +7,6 @@ Predict NIH grant activity series (F/T/K/R) from structured award signals (e.g.,
 **Best baseline:** Histogram-based Gradient Boosting  
 **Validation metric:** ~0.93 **macro-F1**
 
-**Notebook:** [`notebooks/NIH_Grant_Activity_Classifier.ipynb`](notebooks/NIH_Grant_Activity_Classifier.ipynb)  
-**Slides:** [`slides/NIH_Grant_Activity_Classifier_Slides.pdf`](slides/NIH_Grant_Activity_Classifier_Slides.pdf)  
-**Project report:** [`reports/report.md`](reports/report.md)
-
 ## Why this matters
 
 NIH awards include an **Activity** code (e.g., R01, K08, T32).  
@@ -33,6 +29,14 @@ This project frames a **multi-class classification** problem to infer the **acti
 
 Best baseline: **Histogram-based Gradient Boosting (~0.93 macro-F1 on validation)**  
 Benchmarked against: Decision Tree, MLP, Logistic Regression.
+
+---
+
+## Project artifacts
+
+**Notebook:** [`notebooks/NIH_Grant_Activity_Classifier.ipynb`](notebooks/NIH_Grant_Activity_Classifier.ipynb)  
+**Slides:** [`slides/NIH_Grant_Activity_Classifier_Slides.pdf`](slides/NIH_Grant_Activity_Classifier_Slides.pdf)  
+**Project report:** [`reports/report.md`](reports/report.md)
 
 ## Quickstart
 
