@@ -46,13 +46,18 @@ Benchmarked against: Decision Tree, MLP, Logistic Regression.
 
 Open and run: `NIH_Grant_Activity_Classifier.ipynb`
 
-## Repo structure
+---
 
-- `NIH_Grant_Activity_Classifier.ipynb` end-to-end notebook (portfolio version)
-- `src/` shared utilities (e.g., missing-value checks)
-- `data/sample/` sample datasets
-- `reports/` short write-up
-- `slides/` presentation PDF
+## Repository structure
+
+- `notebooks/` analysis + training notebook
+- `src/` reusable utilities (data cleaning / feature helpers)
+- `data/sample/` small sample dataset (tracked)
+- `data/raw/` full dataset (NOT tracked)
+- `reports/` write-up
+- `slides/` presentation slides
+
+---
 
 ## Roadmap
 
